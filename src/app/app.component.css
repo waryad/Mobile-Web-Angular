@@ -1,0 +1,21 @@
+@media only screen and (min-width: 280px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .sidebar {
+      display: none;
+    }
+    .header {
+      height: 50px;
+      padding: 10px;
+    }
+   
+  }
+  

@@ -1,0 +1,31 @@
+<section class="gridArea">
+    <div class="imgArea common">
+    <!-- <img src="assets\images\download.png" width="150px"> -->
+    </div>
+    <!-- <div class="listArea common"> -->
+        <!-- <h3>My Student Info:</h3>
+        <ul>
+          <li>UserName: {{ contentFetch.username}}</li>
+          <li>Campus: {{ contentFetch.campusName}}</li>
+          <li>Department: {{ contentFetch.department}}</li>
+          <li>Age: {{ contentFetch.age}}</li>
+        </ul>
+      </div> -->
+    <div class="myinformation">
+            <label for="username">Username:</label>
+            <input type="text"  name="username" [(ngModel)]="username" [ngStyle]="{background : getuserstyle()}">
+            <br><br>
+            <label for="campus">Campus:Davis,Trafalgar,Oakville</label>
+            <input type="text" [(ngModel)]="campus" [ngStyle]="{background : getcampusStyle()}">
+            <br><br>
+            <label for="department">Department:Computer,Mathematics,Life Science</label>
+            <input type="text" [(ngModel)]="department" [ngStyle]="{background : getdepartmentstyle()}">
+            <br><br>
+            <label for="age">Age:</label>
+            <input type="number" [(ngModel)]="age" [ngStyle]="{background : getagestyle()}">
+           <br><br>
+            <button (click)="resetData()" [disabled]= "campus === '' ">Reset Button</button>
+            <button (click)="submitData()" >SubmitButton</button>
+            </div>
+       
+    </section>
